@@ -12,18 +12,15 @@ pub struct UserCreatedHandler;
 
 impl MessageHandler<UserCreatedEventMessage> for UserCreatedHandler {
     fn handle(&self, message: Box<UserCreatedEventMessage>) -> Result<(), HandleError> {
-        let _ten_millis = time::Duration::from_millis(1000);
+        let ten_millis = time::Duration::from_millis(1000);
         let _now = time::Instant::now();
 
-        // std::thread::sleep(ten_millis); 
+        std::thread::sleep(ten_millis); 
 
         println!("In Muhammad Fauzan Jaisyurrahman's Computer [2206814040]. Message received: {:?}", message);
         Ok(())
     }
 
-    fn get_handler_action(&self) -> String {
-        "handle_user_created".to_string()
-    }
 }
 
 fn main() {
