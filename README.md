@@ -10,3 +10,6 @@ Reflection 1
 
 ![Screenshot interface RabbitMQ](image/subs-1.png)
 Pada gambar interface rabbitMQ saya terdapat 10 queued message karena saya melambankan proses subscriber dalam menerima data dari message broker dengan delay 1 detik.
+
+![Screenshot interface RabbitMQ](image/subs-2.png)
+Pada kali ini queued message menjadi 0 karena pada kali ini saya menjalankan lebih dari satu subscriber. Dapat kita lihat bahwa dengan menjalankan lebih dari satu subscriber, distribusi pesan menjadi lebih cepat.
